@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cotador</string>
+    <string name="get_quote">Obter cotação</string>
+    <string name="source_currency">Moeda origem</string>
+    <string name="destination_currency">Moeda destino</string>
+    <string name="worth">vale:</string>
+    <string name="to">para</string>
+    <string name="same_item">Não é possível converter o valor de moedas iguais</string>
+</resources>

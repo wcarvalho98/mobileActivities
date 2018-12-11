@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Exchanger</string>
+    <string name="get_quote">Get quote</string>
+    <string name="source_currency">Source currency</string>
+    <string name="destination_currency">Destination currency</string>
+    <string name="worth">worth:</string>
+    <string name="to">to</string>
+    <string name="same_item">Isn`t possible to exchange the value of same currency</string>
+</resources>
