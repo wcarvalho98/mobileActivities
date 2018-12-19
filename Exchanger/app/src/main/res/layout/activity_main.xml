@@ -28,10 +28,11 @@
             android:text="@string/get_quote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/buttonConverter" android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/buttonConverter"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:onClick="get"/>
+            android:onClick="get" android:layout_marginTop="96dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,6 +42,13 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:textColor="@android:color/background_dark"
     />
+    <TextView
+            android:text="@string/value_to_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" app:layout_constraintEnd_toEndOf="@+id/spinnerOrigem"
+            app:layout_constraintStart_toStartOf="@+id/spinnerOrigem" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerOrigem"/>
     <TextView
             android:text="@string/source_currency"
             android:layout_width="wrap_content"
@@ -65,4 +73,14 @@
             app:layout_constraintEnd_toStartOf="@+id/spinnerDestino" android:layout_marginEnd="8dp"
             android:layout_marginTop="48dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.527" android:contentDescription="@string/app_name"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/textValue"
+            app:layout_constraintStart_toStartOf="@+id/spinnerDestino"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerDestino" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerDestino"
+            android:importantForAutofill="no" android:contentDescription="@string/value_to_exchange"/>
 </android.support.constraint.ConstraintLayout>

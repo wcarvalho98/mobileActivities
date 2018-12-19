@@ -7,4 +7,7 @@
     <string name="worth">vale:</string>
     <string name="to">para</string>
     <string name="same_item">Não é possível converter o valor de moedas iguais</string>
+    <string name="value_to_exchange">Valor para conversão:</string>
+    <string name="need_value">Um valor é necessário para realizar conversão</string>
+    <string name="zero_invalid">Zero é um valor inválido</string>
 </resources>

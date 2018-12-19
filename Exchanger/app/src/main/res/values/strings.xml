@@ -6,4 +6,7 @@
     <string name="worth">worth:</string>
     <string name="to">to</string>
     <string name="same_item">Isn`t possible to exchange the value of same currency</string>
+    <string name="value_to_exchange">Value to exchange:</string>
+    <string name="need_value">A value is needed to exchange</string>
+    <string name="zero_invalid">Zero is an invalid value</string>
 </resources>

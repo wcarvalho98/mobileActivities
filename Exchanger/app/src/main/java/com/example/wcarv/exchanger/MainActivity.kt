@@ -44,6 +44,14 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.same_item, Toast.LENGTH_SHORT).show()
             return
         }
+        if (textValue.text.toString().equals("")) {
+            Toast.makeText(this, R.string.need_value, Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (textValue.text.toString().equals("0")) {
+            Toast.makeText(this, R.string.zero_invalid, Toast.LENGTH_SHORT).show()
+            return
+        }
 
         val downloadData = Download()
 
@@ -171,15 +179,22 @@ class MainActivity : AppCompatActivity() {
 
                 val newJsonObject = JSONObject(rates)
 
-                Log.i("Exchanger", newJsonObject.getString(spinnerDestino.selectedItem.toString()))
+                var value = newJsonObject.getString(spinnerDestino.selectedItem.toString())
 
-                var resultado = "1 "
+                Log.i("Exchanger", value)
+
+                var temp = textValue.text.toString().toFloat()
+                temp *= value.toFloat()
+
+                var resultado = textValue.text.toString() + " "
                 resultado += spinnerOrigem.selectedItem.toString()
                 resultado += " " + getString(R.string.to) + " "
                 resultado += spinnerDestino.selectedItem.toString()
                 resultado += " " + getString(R.string.worth) + " "
-                resultado += newJsonObject.getString(spinnerDestino.selectedItem.toString()) + " "
+                resultado += temp.toString() + " "
                 resultado += spinnerDestino.selectedItem.toString()
+
+                Log.i("Exchanger", resultado)
 
                 textViewResultado.text = resultado
 
